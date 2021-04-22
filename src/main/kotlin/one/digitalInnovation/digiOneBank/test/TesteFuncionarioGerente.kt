@@ -5,7 +5,8 @@ import one.digitalInnovation.digiOneBank.Gerente
 
 
 fun main(){
-    val maria = Gerente("maria da Silva", "258.654.321-78", 5000.0)
+    val maria = Gerente("maria da Silva", "258.654.321-78", 5000.0, "senha123")
 
     ImprimeRelatorioFuncionario.imprime(maria)
+    TesteAutenticacao().autentica(maria)
 }
